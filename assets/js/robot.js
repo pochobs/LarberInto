@@ -2,14 +2,29 @@ window.alert("Bienvendido al Grupo 'Rollings");
 var apodo = window.prompt("Dale un lindo Apodo a Kanchita");
 var apodoAire = 100;
 var apodoEgo = 50;
-var cachetada = 45;
-var patada = 55;
-var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja " , " el ojo "];
+var cachetada = 75;
+var patada = 85;
+var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja ", " el ojo ", " el cuello ", " el poto ", " los guevos ", " la boca " , " la rodilla "];
 
     var fight = function(golpe) {
         // repeat and execute as long as the enemy robot is alive 
         
         while(apodoAire > 0 && apodoAire < 200) {
+            
+            if (apodoAire <= 0) {
+                window.alert(apodo + " es un 'Cholo Terco' y no se quiere callar :sad:");
+                
+            } 
+            else if (apodoAire > 200){
+                window.alert(apodo + " QUEMO CEREBRO Y EXPLOTA");
+                
+            }
+            else {
+                // window.alert(apodo + " tiene ganas de seguir jodiendo.");
+                
+           
+                   
+                
             window.alert("pasan 0.5 min " + apodo + " en su maximo apojeo empieza a escribir: Bla, bla, Bla y se infla su ego en " + apodoEgo +" puntos");
             apodoAire = apodoAire + apodoEgo;
             window.alert( apodo + " se infló y ahora tiene " +  apodoAire + " puntos de aire");
@@ -21,21 +36,7 @@ var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja " , " el ojo 
                 window.alert("le rompiste " + golpe  + " y ahora tiene " + apodoAire + " de aire."); 
                 
                 
-                    if (apodoAire <= 0) {
-                        window.alert(apodo + " es un 'Cholo Terco' no se quiere callar");
-                        
-                    } 
-                    else if (apodoAire > 200){
-                        window.alert(apodo + " QUEMO CEREBRO Y EXPLOTA");
-                        
-                    }
-                    else {
-                        window.alert(apodo + " tiene ganas de seguir jodiendo.");
-                        
-                   
-                           
-                        }
-                        break;        
+                       
             }
             else if (promptFight === "b" || promptFight === "B") {
                 
@@ -63,14 +64,20 @@ var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja " , " el ojo 
             }
             else {
                 window.alert("es 'A' o 'B'" );
+                if (apodoAire > 200){
+                    window.alert(apodo + " QUEMA CEREBRO Y EXPLOTA");
+                    
+                }
+                fight(golpe);
                 
             }
-           
+        }
+        break;   
         }
         
     }
         
     for( var i = 0; i < golpe.length; i++){
-        debugger;
+        // debugger;
            fight(golpe[i]);
         }
