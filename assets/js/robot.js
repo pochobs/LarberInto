@@ -9,7 +9,7 @@ var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja " , " el ojo 
     var fight = function(golpe) {
         // repeat and execute as long as the enemy robot is alive 
         
-        while(apodoAire => 0 || apodoAire <=200 || golpe++) {
+        while(apodoAire > 0) {
             window.alert("pasan 0.5 min " + apodo + " en su maximo apojeo empieza a escribir: Bla, bla, Bla y se infla su ego en 15 puntos");
             apodoAire = apodoAire + apodoEgo;
             window.alert( apodo + " se infló y ahora tiene " +  apodoAire + " puntos de aire");
@@ -31,11 +31,11 @@ var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja " , " el ojo 
                     }
                     else {
                         window.alert(apodo + " tiene ganas de seguir jodiendo.");
-                        golpe;
+                        
                    
                            
                         }
-                      
+                           
             }
             else if (promptFight === "b" || promptFight === "B") {
                 
@@ -59,11 +59,13 @@ var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja " , " el ojo 
                    
                            
                         }
-                     
+                          
             }
             else {
                 window.alert("es 'A' o 'B'" );
+                break;
             }
+           
         }
     }
         
@@ -71,3 +73,4 @@ var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja " , " el ojo 
         debugger;
            fight(golpe[i]);
         }
+        
