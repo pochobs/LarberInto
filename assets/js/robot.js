@@ -25,7 +25,7 @@ var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja ", " el ojo "
            
                    
                 
-            window.alert("pasan 0.5 min " + apodo + " en su maximo apojeo empieza a escribir: Bla, bla, Bla y se infla su ego en " + apodoEgo +" puntos");
+            window.alert("pasan 5 seg " + apodo + " en su maximo apojeo empieza a escribir: Bla, bla, Bla y se infla su ego en " + apodoEgo +" puntos");
             apodoAire = apodoAire + apodoEgo;
             window.alert( apodo + " se infló y ahora tiene " +  apodoAire + " puntos de aire");
             promptFight = window.prompt("escoge entre 'A' para una triple cachetada ó 'B' para una patada voladora, que hará que desinfle el ego de " + apodo);
