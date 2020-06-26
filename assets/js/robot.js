@@ -1,5 +1,5 @@
-window.alert("Bienvendido al Grupo 'Rollings");
-var apodo = window.prompt("Dale un lindo Apodo a Kanchita");
+window.alert("Bienvendido al Grupo 'Ex-Alumnos");
+var apodo = window.prompt("Dale un lindo Apodo a Leonardo");
 var apodoAire = 100;
 var apodoEgo = 50;
 var cachetada = 75;
