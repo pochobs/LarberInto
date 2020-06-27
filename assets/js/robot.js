@@ -5,8 +5,11 @@ var apodoEgo = 50;
 var cachetada = 75;
 var patada = 85;
 var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja ", " el ojo ", " el cuello ", " el poto ", " los guevos ", " la boca " , " la rodilla "];
+var randomGolpe = golpe[Math.floor(Math.random() * golpe.length)];
 
     var fight = function(golpe) {
+// console.log(randomGolpe)
+
         // repeat and execute as long as the enemy robot is alive 
         
         while(apodoAire > 0 && apodoAire < 200) {
@@ -33,7 +36,7 @@ var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja ", " el ojo "
                 apodoAire = apodoAire - cachetada;
                 
                 
-                window.alert("le rompiste " + golpe  + " y ahora tiene " + apodoAire + " de aire."); 
+                window.alert("le rompiste " + randomGolpe  + " y ahora tiene " + apodoAire + " de aire."); 
                 
                 
                        
@@ -43,7 +46,7 @@ var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja ", " el ojo "
                 apodoAire = apodoAire - patada;
                 
                console.log(golpe);
-                window.alert("le rompiste " + golpe  + " y ahora tiene " + apodoAire + " de aire."); 
+                window.alert("le rompiste " + randomGolpe  + " y ahora tiene " + apodoAire + " de aire."); 
                
                 
                     if (apodoAire <= 0) {
@@ -78,6 +81,6 @@ var golpe = [" la nariz ", " el diente ", " el brazo ", " la oreja ", " el ojo "
     }
         
     for( var i = 0; i < golpe.length; i++){
-        // debugger;
+        var randomGolpe = golpe[Math.floor(Math.random() * golpe.length)];
            fight(golpe[i]);
         }
